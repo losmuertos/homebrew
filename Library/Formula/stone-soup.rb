@@ -25,7 +25,7 @@ class StoneSoup <Formula
     else
       Dir.chdir "source"
     end
-    system "make", "prefix=#{prefix}", "SAVEDIR=saves/", "DATADIR=data/", "install"
+    system "make", "prefix=#{prefix}", "SAVEDIR=~/.crawl/saves/", "DATADIR=data/", "install"
   end
 end
 
